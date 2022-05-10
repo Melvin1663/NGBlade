@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const ngblade = require('./schemas/ngblade');
 const get = require('node-fetch2');
 require('dotenv').config();
-const PORT = 8080;
+const PORT = process.env.PORT;
 
 mongoose.connect(process.env.MONGODB, {
     useNewUrlParser: true,
